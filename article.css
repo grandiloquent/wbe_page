@@ -1,0 +1,236 @@
+html {
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    word-wrap: break-word;
+    color: #0f0f0f;
+    -webkit-text-size-adjust: 100%;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    padding-bottom: 4px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1px;
+    font: inherit;
+    color: #0f0f0f
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #606060;
+    opacity: 1
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #606060;
+    opacity: 1
+}
+
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    min-height: 8.4rem;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px
+}
+
+input {
+    border-bottom: 1px solid #737373;
+    text-overflow: ellipsis
+}
+
+input:focus {
+    margin-bottom: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: #0f0f0f
+}
+
+form {
+    margin: 0
+}
+
+a {
+    color: currentColor;
+    text-decoration: none
+}
+
+strong,
+b {
+    font-weight: 500
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 3px
+}
+
+h1,
+h2,
+h3,
+h4,
+.subhead {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 2.5em;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    font-weight: normal
+}
+
+h2 {
+    font-size: 1.8rem
+}
+
+h3 {
+    font-size: 1.4rem
+}
+
+h4 {
+    font-size: 1.3rem
+}
+
+.subhead {
+    opacity: .6
+}
+
+img {
+    min-width: 1px;
+    min-height: 1px;
+    -webkit-filter: none;
+    filter: none
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    text-transform: inherit;
+    color: inherit;
+    background: transparent
+}
+
+.c3-icon {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    stroke: none
+}
+
+.markdown {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.markdown h1 {
+    margin: 0 83px  20px 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: rgb(32, 33, 36);
+}
+
+.markdown h2 {
+    margin: 56px 0 16px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: rgb(32, 33, 36);
+}
+
+.markdown p {
+    margin: 16px 0;
+}
+
+.markdown code {
+    border: 1px solid rgb(218, 220, 224);
+    padding: 1px 4px;
+    border-radius: 4px;
+    background: rgb(248, 249, 250);
+    font-size: 14.4px;
+    line-height: 14.4px;
+    font-weight: 500;
+    font-family: Consolas, "Roboto Mono", monospace;
+}
+
+.markdown dd,
+.markdown ol,
+.markdown ul {
+    margin: 0;
+    padding-left: 40px
+}
+
+.markdown ul {
+    list-style: disc outside
+}
+
+.markdown li,
+.markdown li p {
+    margin: 12px 0;
+    padding: 0
+}
+
+.markdown li>p:last-child {
+    margin-bottom: 0;
+}
+
+.markdown ol {
+    list-style: decimal outside
+}
+
+.markdown :link,
+.markdown :visited {
+    outline: 0;
+    word-break: break-word;
+    text-decoration: underline;
+    color: #174ea6;
+}
+
+.markdown img,
+.markdown video {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown pre {
+    padding: 24px 23px 24px 24px;
+    background-color: rgb(248, 249, 250);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Consolas, "Roboto Mono", monospace;
+    overflow: auto;
+}
+
+.markdown pre>code {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font: inherit;
+}

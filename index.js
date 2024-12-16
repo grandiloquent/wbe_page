@@ -29,3 +29,30 @@ document.querySelector('#models+.button-more')
     });
 
 
+
+const homeLogo = document.querySelector('.home-logo');
+const topbarHeaderContent = document.querySelector('.topbar-header-content');
+
+
+const searchBarButton = document.querySelector('.search-bar-button');
+searchBarButton.addEventListener('click', evt => {
+    evt.stopPropagation();
+    topbarBackArrow.removeAttribute('style');
+    searchbox.removeAttribute('style');
+    homeLogo.style.display = 'none'
+    topbarHeaderContent.style.display = 'none'
+})
+
+
+
+const topbarBackArrow = document.querySelector('.topbar-back-arrow');
+const searchbox = document.querySelector('.searchbox');
+topbarBackArrow.addEventListener('click', evt => {
+    evt.stopPropagation();
+    topbarBackArrow.style.display = 'none'
+    searchbox.style.display = 'none'
+    homeLogo.removeAttribute('style');
+    topbarHeaderContent.removeAttribute('style');
+
+});
+
