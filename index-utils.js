@@ -21,3 +21,11 @@ function randomModels(models) {
     models[indexs[2]], models[indexs[3]], models[indexs[4]], models[indexs[5]]
   ]
 }
+function randomBooks(books) {
+  const indexs = getUniqueRandomIndexs(6, 0, books.length)
+  return [
+    books[indexs[0]],
+    books[indexs[1]],
+    books[indexs[2]], books[indexs[3]], books[indexs[4]], books[indexs[5]]
+  ]
+}

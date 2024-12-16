@@ -1,11 +1,11 @@
 
 let uri = "https://xpsycho.oss-cn-beijing.aliyuncs.com";
-async function load() {
-    const res = await fetch(uri + `/models.json`);
+async function load(name) {
+    const res = await fetch(uri + `/${name}.json`);
     return res.json();
 }
 async function render() {
-    let data = await load();
+    let data = await load('models');
     data = randomModels(data);
     const models = document.querySelector('#models');
     models.innerHTML = data.map(item => {
@@ -14,6 +14,51 @@ async function render() {
                          class="lazy list-item-image" >
                     <button class="list-item-title">${item.title}</button>
                 </div>`
+    }).join('');
+    data = await load('books');
+    data = randomBooks(data);
+    const books = document.querySelector('#books');
+    books.innerHTML = data.map((item,index) => {
+        return `<div class="book-item" style="${index!==2?'':'padding-bottom:0'}">
+    <div class="book-item-wrapper">
+      <div class="book-item-left">
+        <div class="book-item-details">
+          <div class="book-item-detail-item" style="display: none;">
+          </div>
+          <div class="book-item-detail-right">
+            <div class="book-item-detail-timeago">
+              ${item.skills}
+            </div>
+            <div class="book-item-detail-menu" style="display: none;">
+              <image lazy-load mode="aspectFit" src="https://xpsycho.oss-cn-beijing.aliyuncs.com/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"></image>
+
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="book-item-content">
+          ${item.title}
+        </div>
+        <div class="book-item-subtitle">
+          ${item.summary}
+        </div>
+      </div>
+      <image class="book-item-image" mode="aspectFit" src="https://xpsycho.oss-cn-beijing.aliyuncs.com/${item.isbn}.webp" lazy-load>
+
+      </image>
+    </div>
+    <div class="book-item-buttons">
+      <button open-type="contact" class="book-item-button">
+        获取
+      </button>
+
+
+    </div>
+  </div>`
     }).join('');
     new LazyLoad();
 }

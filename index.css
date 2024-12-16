@@ -409,3 +409,117 @@ button.list-item-title {
     height: 18px;
     margin-left: 8px;
 }
+
+.book-item {
+    border-top: 1px solid rgb(232, 234, 237);
+    display: block;
+    padding: 12px 0;
+}
+
+.book-item-button {
+    text-decoration: none;
+    font-size: .6875rem !important;
+    letter-spacing: .0727272727em;
+    font-weight: 500 !important;
+    border-radius: 16px;
+    border: 1px solid rgb(218, 220, 224);
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    height: auto;
+    margin: 8px 8px 0 0;
+    padding: 4px 12px !important;
+    display: inline-flex !important;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: auto !important;
+}
+
+.book-item-content {
+    letter-spacing: .00625em;
+    color: rgb(32, 33, 36);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-top: 8px;
+}
+
+.book-item-detail-item {
+    font-weight: 500;
+}
+
+.book-item-detail-item::after {
+    content: " • ";
+    padding-right: 8px;
+    padding-left: 6px;
+}
+
+.book-item-detail-item:after {
+    content: " • ";
+    padding-right: 8px;
+    padding-left: 6px;
+}
+
+.book-item-detail-menu {
+    padding-left: 8px;
+    visibility: visible;
+    position: relative;
+    display: flex;
+}
+
+.book-item-detail-menu image {
+    width: 16px;
+    height: 16px;
+}
+
+.book-item-detail-right {
+    display: inline-flex;
+}
+
+.book-item-details {
+    flex-direction: row;
+    color: rgb(95, 99, 104);
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: .0142857143em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.book-item-detail-timeago {
+    white-space: nowrap;
+}
+
+.book-item-image {
+    border: none;
+    border-radius: 8px;
+    object-fit: cover;
+    align-self: end;
+    margin-left: 16px;
+    height: 114px;
+    width: 92px;
+    flex-shrink: 0;
+}
+
+.book-item-left {
+    flex-grow: 1;
+}
+
+.book-item-subtitle {
+    font-size: 12px;
+    overflow: hidden;
+    max-height: 11rem;
+    -webkit-line-clamp: 5;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal
+}
+
+.book-item-wrapper {
+    display: flex;
+    flex-direction: row;
+}
