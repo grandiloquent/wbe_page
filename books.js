@@ -9,7 +9,7 @@ async function render() {
     let data = await load('books');
     const books = document.querySelector('#books');
     books.innerHTML = data.map((item, index) => {
-        return `<div class="book-item" style="${index !== 2 ? '' : 'padding-bottom:0'}">
+        return `<div class="book-item">
     <div class="book-item-wrapper">
       <div class="book-item-left">
         <div class="book-item-details">
