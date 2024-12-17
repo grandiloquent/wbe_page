@@ -29,3 +29,16 @@ function randomBooks(books) {
     books[indexs[2]], books[indexs[3]], books[indexs[4]], books[indexs[5]]
   ]
 }
+
+async function renderModels() {
+  let data = await load('models');
+  data = randomModels(data);
+  const models = document.querySelector('#models');
+  models.innerHTML = data.map(item => {
+    return `<div class="list-item">
+                    <img data-src="${uri}/${item.thumbnail}.webp" data-src="${uri}/${item.thumbnail}.webp"
+                         class="lazy list-item-image" >
+                    <button class="list-item-title">${item.title}</button>
+                </div>`
+  }).join('');
+}
