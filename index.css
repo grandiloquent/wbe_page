@@ -538,6 +538,9 @@ button.list-item-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1rem;
+    color: rgb(95, 99, 104);
+
 }
 
 .article-item h3 {
