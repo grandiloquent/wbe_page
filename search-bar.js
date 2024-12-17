@@ -100,6 +100,10 @@ function initializeSearchBar() {
     </div>`);
 
     const homeLogo = document.querySelector('.home-logo');
+    homeLogo.addEventListener('click', evt => {
+            evt.stopPropagation();
+            location.href = "/";
+        });
     const topbarHeaderContent = document.querySelector('.topbar-header-content');
 
 

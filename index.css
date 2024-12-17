@@ -523,3 +523,23 @@ button.list-item-title {
     display: flex;
     flex-direction: row;
 }
+
+.section-heading h1 {
+    margin: 0;
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+}
+
+.article-item {
+    border-top: 1px solid rgb(218, 220, 224);
+    padding: 8px 0;
+    min-height: 43px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-item h3 {
+    margin: 0;
+}

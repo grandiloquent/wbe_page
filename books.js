@@ -38,7 +38,7 @@ async function render() {
  
     </div>
     <div class="book-item-buttons">
-      <button open-type="contact" class="book-item-button">
+      <button class="book-item-button">
         获取
       </button>
 
