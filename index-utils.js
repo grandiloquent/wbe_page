@@ -42,7 +42,7 @@ async function renderModels() {
   data = randomModels(data);
   const models = document.querySelector('#models');
   models.innerHTML = data.map(item => {
-    return `<div class="list-item">
+    return `<div class="list-item" style="break-inside: avoid;margin-bottom:8px">
                     <img data-src="${uri}/${item.thumbnail}.webp" data-src="${uri}/${item.thumbnail}.webp"
                          class="lazy list-item-image" >
                     <button class="list-item-title">${item.title}</button>
